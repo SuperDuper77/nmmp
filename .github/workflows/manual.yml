@@ -17,7 +17,8 @@ jobs:
       with:
         distribution: "temurin"
         java-version: "11"
-    - run: ./gradlew arsc:build ./gradlew build
+    - run: ./gradlew arsc:build
+    - run: ./gradlew build
     - uses: actions/upload-artifact@v3
       with:
         name: artifact
